@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新建单图</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/newchart.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/font-awesome.css">
+	<script src="js/lib/require.js"></script>
+</head>
+<body>
+	<div class="sc-main-l">
+		<div class="ds-modal list-modal">
+			<div class="head-main">
+				<i class="fa fa-tasks"></i>
+				<span class="sc_text">数据源配置</span>
+			</div>
+			<div class="content">
+				<div class="com-group">
+					<label>选择数据源</label>
+					<input type="text" class="select_sty1" />
+				</div>
+				<hr class="hr-or">
+				<div class="com-group">
+					<label>自定义数据源</label>
+					<button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button>
+				</div>
+				<div class="ins_content">
+					<div class="com-group">
+						<span>数据源1数据源1数据源1</span><button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button><button id="self-dataSource" class="fa fa-window-close bi-btn btn-conf"></button>
+					</div>
+					<div class="com-group">
+						<span>数据源1数据源1数据源1</span><button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button><button id="self-dataSource" class="fa fa-window-close bi-btn btn-conf"></button>
+					</div>
+					<div class="com-group">
+						<span>数据源1数据源1数据源1</span><button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button><button id="self-dataSource" class="fa fa-window-close bi-btn btn-conf"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dim-modal list-modal">
+			<div class="head-main">
+				<i class="fa fa-tasks"></i>
+				<span class="sc_text">维度配置</span>
+			</div>
+			<div class="content">
+				<div class="com-group">
+					<label>维度配置</label>
+					<button id="self-dataDim" class="fa fa-cog bi-btn btn-conf"></button>
+				</div>
+				<div class="ins_content">
+					<div class="com-group">
+						<span>维度1数据源1数据源1</span><button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button><button id="self-dataSource" class="fa fa-window-close bi-btn btn-conf"></button>
+					</div>
+					<div class="com-group">
+						<span>维度1数据源1数据源1</span><button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button><button id="self-dataSource" class="fa fa-window-close bi-btn btn-conf"></button>
+					</div>
+					<div class="com-group">
+						<span>维度1数据源1数据源1</span><button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button><button id="self-dataSource" class="fa fa-window-close bi-btn btn-conf"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="index-modal list-modal">
+			<div class="head-main">
+				<i class="fa fa-tasks"></i>
+				<span class="sc_text">指标配置</span>
+			</div>
+			<div class="content">
+				<div class="com-group">
+					<label>指标配置</label>
+					<button id="self-dataIndex" class="fa fa-cog bi-btn btn-conf"></button>
+				</div>
+				<div class="ins_content">
+					<div class="com-group">
+						<span>指标1数据源1数据源1</span><button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button><button id="self-dataSource" class="fa fa-window-close bi-btn btn-conf"></button>
+					</div>
+					<div class="com-group">
+						<span>指标1数据源1数据源1</span><button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button><button id="self-dataSource" class="fa fa-window-close bi-btn btn-conf"></button>
+					</div>
+					<div class="com-group">
+						<span>指标1数据源1数据源1</span><button id="self-dataSource" class="fa fa-cog bi-btn btn-conf"></button><button id="self-dataSource" class="fa fa-window-close bi-btn btn-conf"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="preview-modal list-modal">
+			<div class="head-main">
+				<i class="fa fa-tasks"></i>
+				<span class="sc_text">图表预览</span>
+			</div>
+			<div class="content">
+				<div class="com-group">
+					<label>图表预览</label>
+					<button id="self-preview" class="bi-btn btn-info">预览</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sc-cmain in">
+		<div class="head-main">
+			<i class="fa fa-tasks"></i>
+			<span class="sc_text">图表</span>
+		</div>
+		<ul class="menu-item-list">
+			<li data-type='table'>
+				<div class="img-bg">
+					<i class="c-table"></i>
+				</div>
+				<span>交叉表</span>
+			</li>
+			<li data-type='line'>
+				<div class="img-bg">
+					<i class="c-bar"></i>
+				</div>
+				<span>柱状图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-line"></i>
+				</div>
+				<span>线图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-pie"></i>
+				</div>
+				<span>饼图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-gauge"></i>
+				</div>
+				<span>仪表盘</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-line"></i>
+				</div>
+				<span>线图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-pie"></i>
+				</div>
+				<span>饼图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-gauge"></i>
+				</div>
+				<span>仪表盘</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-table"></i>
+				</div>
+				<span>交叉表</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-bar"></i>
+				</div>
+				<span>柱状图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-line"></i>
+				</div>
+				<span>线图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-pie"></i>
+				</div>
+				<span>饼图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-gauge"></i>
+				</div>
+				<span>仪表盘</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-line"></i>
+				</div>
+				<span>线图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-pie"></i>
+				</div>
+				<span>饼图</span>
+			</li>
+			<li>
+				<div class="img-bg">
+					<i class="c-gauge"></i>
+				</div>
+				<span>仪表盘</span>
+			</li>
+		</ul>
+		<div class="fa fa-caret-right silde-icon"></div>
+	</div>
+	<div class="sc-rmain">
+		<div class="sc-example">
+			<ul id="sc-tab1"  class="nav nav-tabs" role="tablist">
+			  <li role="presentation" class="active"><a href="#chart1">chart1</a><i class="fa fa-times"></i></li>
+			  <li role="presentation" class="add-tab"><span class="fa fa-plus-square"></span></li>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+		     	<div role="tabpanel" class="tab-pane fade active in" id="chart1">
+					<div class="chart-main">
+						<div class="tit_h1">
+							<i class="mark"></i>
+							<div class="g-edit" contenteditable="true">我的单图</div>
+						</div>
+						<div id="chart1-show" class="chart-show">
+
+						</div>
+					</div>
+		      	</div>
+		   	</div>
+		</div>
+	</div>
+	<!-- 遮罩数据源 -->
+	<div id="dataSource-modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="registration-form-wrapper clearfix">
+					<h1 class="modal-tit">数据源配置</h1>
+					<form>
+						<div class="com-group">
+							<label>名称:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="com-group">
+							<label>数据库:</label>
+							<select>
+								<option value="数据库1">数据库1</option>
+								<option value="数据库2">数据库2</option>
+							</select>
+						</div>
+						<div class="com-group">
+							<label>端口号:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="com-group">
+							<label>数据表名:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="com-group">
+							<label>用户名:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="com-group">
+							<label>密码:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="com-group">
+							<label>连接测试:</label>
+							<button class="bi-btn btn-default" type="button">测试</button>
+							<var class="calltext">连接成功!</var>
+						</div>
+						<div class="btn-mains">
+							<button type='button' class="btn btn-success confirm">确定</button>
+							<button type='button' class="btn btn-cancel cancel">取消</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 遮罩维度 -->
+	<div id="dataDim-modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="registration-form-wrapper clearfix">
+					<h1 class="modal-tit">维度配置</h1>
+					<form>
+						<div class="com-group">
+							<label>英文名称:</label>
+							<select>
+								<option value="维度1">weidu1</option>
+								<option value="维度2">weidu2</option>
+							</select>
+						</div>
+						<div class="com-group">
+							<label>中文维度名称:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="com-group">
+							<label>控件:</label>
+							<select>
+								<option value="数据库1">级联组件</option>
+								<option value="数据库2">日期组件</option>
+							</select>
+						</div>
+						<div class="com-group">
+							<label>控件配置信息:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="btn-mains">
+							<button type='button' class="btn btn-success confirm">确定</button>
+							<button type='button' class="btn btn-cancel cancel">取消</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 遮罩指标 -->
+	<div id="dataIndex-modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="registration-form-wrapper clearfix">
+					<h1 class="modal-tit">指标配置</h1>
+					<form>
+						<div class="com-group">
+							<label>指标名称:</label>
+							<select>
+								<option value="指标1">zhibiao1</option>
+								<option value="指标2">zhibiao2</option>
+							</select>
+						</div>
+						<div class="com-group">
+							<label>中文名称:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="com-group">
+							<label>计算公式:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="com-group">
+							<label>相关约束条件:</label>
+							<input type="text" class="select_sty1" />
+						</div>
+						<div class="btn-mains">
+							<button type='button' class="btn btn-success confirm">确定</button>
+							<button type='button' class="btn btn-cancel cancel">取消</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	requirejs.config({
+	    // 默认路径 js/lib
+	    baseUrl: 'js/lib',
+	    paths: {
+	        "app1": "../app",
+	        "jquery": "./jquery-1.11.2.min",
+	        "wrap_window": "./wrap_window",
+	        "new-chart-list": "./new-chart-list",
+	        'tab': "./tab",
+	        'echarts': "./echarts.min",
+	        'lineChart': "./mycharts/line"
+	    }
+	});
+
+	requirejs(["jquery","wrap_window","lineChart","new-chart-list",'tab'],function ($,wrap_window,lineChart) {
+		var dataSourceObj; // 数据源弹窗实例
+		var dataDimObj; // 维度弹窗实例
+		var dataIndexObj; // 指标弹窗实例
+		// 数据源弹窗
+		function dataSourceWin() {
+			dataSourceObj = new wrap_window('dataSource-modal');
+			// 打开窗口
+			$('#self-dataSource').click(function () {
+				dataSourceObj.openWindow();
+				dataSourceObj.confirmCallback(function () {
+					$('.dim-modal').show();
+					$('.ds-modal .content').toggle();
+				})
+			})
+		}
+		dataSourceWin();
+		// 数据源修改
+		function changeDataSource() {
+			$('.ds-modal .ins_content').on('click', 'button.fa-cog', function () {
+				dataSourceObj.openWindow();
+				dataSourceObj.confirmCallback(function () {
+				})
+			})
+		}
+		changeDataSource();
+		// 获取数据
+		function getWinDate() {
+			$.ajax({
+	            type: 'post',
+	            url: '/dashboard/maidongThree/ajax/getIndustryData',
+	            jsonp: "callback",
+	            jsonpCallback: "jsonpCallback",
+	            dataType: "json",
+	            data:{province:selectedProvince,month_num:month_num},
+	            async:true,
+	            success: function(data){
+
+	            },
+	            error: function(data){
+	                console.log('请求错误')
+	            }
+	        })
+		}
+		// 维度弹窗
+		function dataDimWin() {
+			dataDimObj = new wrap_window('dataDim-modal');
+			// 打开窗口
+			$('#self-dataDim').click(function () {
+				dataDimObj.openWindow();
+				dataDimObj.confirmCallback(function () {
+					$('.index-modal').show();
+					$('.dim-modal .content').toggle();
+				});
+			});
+		}
+		dataDimWin();
+		// 维度修改弹窗
+		function changedataDimWin() {
+			$('.dim-modal .ins_content').on('click', 'button.fa-cog', function () {
+				dataDimObj.openWindow();
+				dataDimObj.confirmCallback(function () {
+					console.log(334)
+				})
+			})
+		}
+		changedataDimWin();
+		// 指标弹窗
+		function dataIndexWin() {
+			dataIndexObj = new wrap_window('dataIndex-modal');
+			// 打开窗口
+			$('#self-dataIndex').click(function () {
+				dataIndexObj.openWindow();
+				dataIndexObj.confirmCallback(function () {
+					$('.preview-modal').show();
+					$('.index-modal .content').toggle();
+				})
+			})
+		}
+		dataIndexWin();
+		// 指标修改弹窗
+		function changedataIndexWin() {
+			$('.index-modal .ins_content').on('click', 'button.fa-cog', function () {
+				dataIndexObj.openWindow();
+				dataIndexObj.confirmCallback(function () {
+					console.log(555)
+				})
+			})
+		}
+		changedataIndexWin();
+		// 预览图表
+		function previewWin() {
+			var type,chart1,thischartId;
+			var option1 = {
+				legend: ['颜值','才能'],
+				xAxis: [
+					{type:'',data:['1月','2月','3月','4月','5月','1月','2月','3月','4月','5月','1月','2月','3月','4月','5月','1月','2月','3月','4月','5月']}
+				],
+				yAxis: [
+					{type:''}
+				],
+				series: [
+					{
+						data:[90,99,90,98,95,90,99,90,98,95,90,99,90,98,95,90,99,90,98,95],
+						areaStyle: false,
+						smooth: true,
+						stack: null,
+					},
+					{
+						data:[100,79,90,68,95,100,79,90,68,95,100,79,90,68,95,100,79,90,68,95],
+						areaStyle: false,
+						smooth: true,
+						stack: null,
+					}
+				],
+				dataZoom: false
+			}
+			$('#self-preview').click(function () {
+				$('.sc-cmain .silde-icon').show();
+				$('.sc-rmain').show();
+				$('.sc-cmain').removeClass('in').addClass('out');
+			})
+			$('.menu-item-list').on('click','li',function () {
+				type = $(this).attr('data-type');
+				thischartId = $('#sc-tab1 .active a').html()+'-show';
+				chart1 = new lineChart(thischartId);
+				chart1.randerLineChart(option1);
+			})
+		}
+		previewWin();
+		// tab切换
+		$('#sc-tab1').on('click','a',function (e) {
+			e.preventDefault()
+		    $(this).tab('show')
+		})
+		// 添加tab
+		$('.add-tab').click(function () {
+			$('.sc-cmain').removeClass('in').removeClass('out').addClass('out');
+			var chartlength = $('#sc-tab1 li').length;
+			$("<li><a href='#chart"+chartlength+"'>chart"+chartlength+"</a><i class='fa fa-times'></li>").insertBefore('.add-tab');
+			$("#myTabContent").append("<div role='tabpanel' class='tab-pane' id='chart"+chartlength+"'><div class='tit_h1'><i class='mark'></i><div class='g-edit' contenteditable='true'>我的单图</div></div><div id='chart"+chartlength+"-show' class='chart-show'><div></div>");
+			$('#sc-tab1 li').eq(chartlength-1).find('a').click();
+		})
+		// 删除tab
+		$('#sc-tab1').on('click', 'i.fa-times', function () {
+			var self_id = '#'+$(this).parents('li').find('a').html();
+			$(this).parents('li').remove();
+			$(self_id).remove();
+		})
+	});
+</script>
+</html>

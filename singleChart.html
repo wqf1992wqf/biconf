@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的单图</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/singleChart.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/font-awesome.css">
+	<script src="js/lib/require.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 control_main">
+				<input type="text" placeholder="搜索chart" class="select_sty1" />
+				<a href="./newchart.html" target="_self" class="bi-btn btn-primary">新建单图</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="tit_h1">
+					<i class="mark"></i>
+					<span class="sc_text">我的单图</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<a class="sc_main">
+					<div class="c-tit-main">
+						<h3>我的单图1</h3>
+						<div class="btn-main">
+							<div class="fa fa-pencil-square-o"></div>
+							<div class="fa fa-window-close"></div>
+						</div>
+					</div>
+					<img src="images/pic1.png" class="pre_pic">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<a class="sc_main">
+					<div class="c-tit-main">
+						<h3>我的单图2</h3>
+						<div class="btn-main">
+							<div class="fa fa-pencil-square-o"></div>
+							<div class="fa fa-window-close"></div>
+						</div>
+					</div>
+					<img src="images/pic1.png" class="pre_pic">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<a class="sc_main">
+					<div class="c-tit-main">
+						<h3>我的单图3</h3>
+						<div class="btn-main">
+							<div class="fa fa-pencil-square-o"></div>
+							<div class="fa fa-window-close"></div>
+						</div>
+					</div>
+					<img src="images/pic1.png" class="pre_pic">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<a class="sc_main">
+					<div class="c-tit-main">
+						<h3>我的单图1我的单图1我的单图1我的单图1</h3>
+						<div class="btn-main">
+							<div class="fa fa-pencil-square-o"></div>
+							<div class="fa fa-window-close"></div>
+						</div>
+					</div>
+					<img src="images/pic1.png" class="pre_pic">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<a class="sc_main">
+					<div class="c-tit-main">
+						<h3>我的单图1</h3>
+						<div class="btn-main">
+							<div class="fa fa-pencil-square-o"></div>
+							<div class="fa fa-window-close"></div>
+						</div>
+					</div>
+					<img src="images/pic1.png" class="pre_pic">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<a class="sc_main">
+					<div class="c-tit-main">
+						<h3>我的单图2</h3>
+						<div class="btn-main">
+							<div class="fa fa-pencil-square-o"></div>
+							<div class="fa fa-window-close"></div>
+						</div>
+					</div>
+					<img src="images/pic1.png" class="pre_pic">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<a class="sc_main">
+					<div class="c-tit-main">
+						<h3>我的单图3</h3>
+						<div class="btn-main">
+							<div class="fa fa-pencil-square-o"></div>
+							<div class="fa fa-window-close"></div>
+						</div>
+					</div>
+					<img src="images/pic1.png" class="pre_pic">
+				</a>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-12">
+				<a class="sc_main">
+					<div class="c-tit-main">
+						<h3>我的单图1我的单图1我的单图1我的单图1</h3>
+						<div class="btn-main">
+							<div class="fa fa-pencil-square-o"></div>
+							<div class="fa fa-window-close"></div>
+						</div>
+					</div>
+					<img src="images/pic1.png" class="pre_pic">
+				</a>
+			</div>
+		</div>
+		<!-- 分页 -->
+		<div class="page-set">
+            <ul class="page-num">
+                <div id="btn-view">
+                    <li class="prevPage"><a>上一页</a></li>
+                    <li class="active change-page"><a>1</a></li>
+                    <li class="change-page"><a>2</a></li>
+                    <li class="change-page"><a>3</a></li>
+                    <li class="change-page"><a>4</a></li>
+                    <li class="nextPage"><a>下一页</a></li>
+                </div>
+                <span class="text">输入页码</span>
+                <input type="text" id="pageNum" class="pageInp">
+                <input type="button" class="go_btn" value="跳转">
+            </ul>
+        </div>
+        <!-- 遮罩 -->
+		<div id="signup-modal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="registration-form-wrapper clearfix">
+						<h1 class="win-test">您确定要删除图表吗？</h1>
+						<div class="btn-mains">
+							<button type='button' class="btn btn-success confirm">确定</button>
+							<button type='button' class="btn btn-cancel cancel">取消</button>
+						</div>
+						<!-- <button class="btn btn-success confirm">确定</button>
+						<button class="btn btn-info cancel">取消</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	requirejs.config({
+	    // 默认路径 js/lib
+	    baseUrl: 'js/lib',
+	    paths: {
+	        "app1": "../app",
+	        "jquery": "./jquery-1.11.2.min",
+	        "bi_base": "./bi_base",
+	        "wrap_window": "./wrap_window"
+	    }
+	});
+
+	requirejs(["jquery","wrap_window"],function ($,wrap_window) {
+		var _this;
+		wrap_window.init('signup-modal');
+		// 点击确定删除当前图表
+		wrap_window.confirm('signup-modal', function () {
+			$(_this).parents('.col-md-3').remove();
+			console.log('删除图表')
+		})
+		$('.fa-window-close').click(function () {
+			_this = this;
+			wrap_window.openWindow('signup-modal')
+		})
+	});
+</script>
+</html>

@@ -1,0 +1,258 @@
+@charset "utf-8";*{box-sizing:border-box}html{color:#000;background:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;height: 100%;overflow: auto;}html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{font-family:sans-serif;height: 100%;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0;font-family: 'Microsoft YaHei';}input,select,textarea{font-size:100%}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}a:hover{text-decoration:none}ins,a{text-decoration:none}
+
+html,body {
+	background-color: #f7f7f7;
+}
+.fl-l {float: left;}
+.fl-r {float: right;}
+/*浏览器滚动条*/
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-button:vertical{display:none}
+::-webkit-scrollbar-track:vertical{background-color:black}
+::-webkit-scrollbar-track-piece{background:#E3E3E3;}
+::-webkit-scrollbar-thumb:vertical{background-color:#555;border-radius:0px}
+::-webkit-scrollbar-thumb:vertical:hover{background-color:#3B3B3B}
+::-webkit-scrollbar-corner:vertical{background-color:#535353}
+::-webkit-scrollbar-resizer:vertical{background-color:#FF6E00}
+
+.mark {
+    float: left;
+    display: block;
+    width: 4px;
+    height: 15px;
+    margin-top: 22px;
+    background: #ff6600;
+}
+.tit_h1 {
+	height: 58px;
+	line-height: 58px;
+}
+.tit_h1 span {
+	margin-left: 10px;
+	font-size: 15px;
+}
+.select_sty1 {
+	display: inline-block;
+    border: none;
+    height: 27px;
+    padding: 4px 6px;
+    width: 165px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555;
+    vertical-align: middle;
+    outline: none;
+    text-indent: 5px;
+}
+.bi-btn {
+	display: inline-block;
+    padding: 4px 9px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.btn-cancel {
+	color: #000;
+    background-color: #fff;
+    border-color: #eee;
+    border-width: 2px;
+}
+.btn-cancel:hover {
+	background-color: #eee;
+	color: #000;
+}
+
+.control_main {
+	margin: 10px 0;
+	text-align: center;
+}
+.inline_main {
+	display: inline-block;
+	margin: 10px 0;
+}
+.sc_main {
+	display: block;
+	padding: 8px;
+	margin-bottom: 20px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s;
+	-moz-transition: all .3s;	/* Firefox 4 */
+	-webkit-transition: all .3s;	/* Safari 和 Chrome */
+	-o-transition: all .3s;
+}
+.sc_main:hover {
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+}
+.c-tit-main {
+	position: relative;
+}
+.sc_main h3 {
+	width: 80%;
+	color: #293c55;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+    font-weight: normal;
+    font-size: 13px;
+}
+.sc_main .pre_pic {
+	display: block;
+	margin: 8px auto 0;
+	width: 100%;
+	height: 240px;
+}
+.btn-main {
+	position: absolute;
+	right: 0;
+	top: -5px;
+	overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+}
+.btn-main .fa:first-child {
+	margin-right: 5px;
+}
+
+
+/* 分页 */
+.page-set {
+    margin-bottom: 20px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #464646;
+    text-align: center;
+}
+.page-set .rol,.page-set .pageInp {
+    height: 100%;
+    padding: 0 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    background: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.page-set .pageInp {
+    height: 30px;
+    width: 66px;
+    outline: none;
+    color: #000;
+}
+.page-set .page-num li.active {
+    background: #3284A7;
+    border: 1px solid #3284A7;
+}
+.page-set .page-num li {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #e6e6e6;
+    height: 100%;
+    padding: 0 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    background: #fff;
+    margin: 0 0 0 5px;
+    cursor: pointer;
+}
+.page-set .page-num li.active a {
+    color: #fff;
+}
+.page-set .page-num .text {
+    margin-left: 5px;
+}
+#btn-view {
+    display: inline-block;
+}
+.page-set .go_btn {
+    font-size: 12px;
+    margin: 0;
+    height: 30px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #3284A7;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+    font-family: 'Microsoft Yahei';
+}
+
+/* 遮罩 */
+.registration-form-wrapper {
+    margin: 32px auto 96px;
+    max-width: 504px;
+    padding: 36px 50px 32px 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.registration-form-wrapper .win-test {
+	font-size: 20px;
+}
+#signup-modal .registration-form-wrapper {
+    margin: 0 auto;
+    box-shadow: none;
+}
+#signup-modal {
+    padding: 0
+}
+#signup-modal button {
+	margin-top: 20px;
+	padding: 4px 15px;
+	outline: none;
+}
+#signup-modal .btn-success {
+	margin-right: 23px;
+}
+@media (min-width: 992px) {
+    #signup-modal .modal-dialog {
+        margin-top:60px
+    }
+}
+@media (min-width: 768px) {
+    #signup-modal .modal-dialog {
+        max-width:504px
+    }
+}
+#signup-modal .registration-form-wrapper {
+    margin: 0 auto;
+    box-shadow: none
+}
+@media (max-width: 991px) {
+    #signup-modal .registration-form-wrapper {
+        width:100%
+    }
+}
+#signup-modal .registration-form-wrapper .btn-mains .btn{
+	border-radius: 0;
+    width: 120px;
+    padding: 6px 15px;
+}
+#signup-modal .registration-form-wrapper .btn-mains {
+    margin-top: 20px;
+    text-align: center;
+}

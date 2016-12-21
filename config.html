@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图表配置</title>
+	<link rel="stylesheet" type="text/css" href="css/config.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/font-awesome.css">
+	<script data-main="js/config.js" src="js/lib/require.js"></script>
+</head>
+<body>
+	<div class="navigator-bar-container">
+		<div class="navigator-bar-logo">
+			<div class="icon-app-bg navigator-logo-bg nav-icon">
+				<img src="images/ideas_logo.png"/>
+			</div>
+		</div>
+		<div class="navigator-bar-top">
+			<a class="navigator-bar-btn active" href="singleChart.html" target="myFrameName">
+				<div class="fa fa-area-chart"></div>
+				<span>我的单图</span>
+			</a>
+			<a class="navigator-bar-btn" href="board.html" target="myFrameName">
+				<div class="fa fa-dashboard "></div>
+				<span>我的看板</span>
+			</a>
+			<a class="navigator-bar-btn" href="board.html" target="myFrameName">
+				<div class="fa fa-cog "></div>
+				<span>权限控制</span>
+			</a>
+			<a class="navigator-bar-btn" href="board.html" target="myFrameName">
+				<div class="fa fa-database "></div>
+				<span>数据源管理</span>
+			</a>
+		</div>
+		<div class="navigator-bar-bottom">
+			<div class="navigator-bar-btn">
+				<div class="fa fa-user-circle-o"></div>
+				<span>吴庆凡</span>
+			</div>
+		</div>
+	</div>
+	<div class="desktop">
+		<!-- <iframe src="singleChart.html" class="desktop_iframe" noresize="" name="myFrameName" id="main" scrolling="yes"></iframe> -->
+		<iframe src="newChart.html" class="desktop_iframe" noresize="" name="myFrameName" id="main" scrolling="yes"></iframe>
+	</div>
+</body>
+</html>
