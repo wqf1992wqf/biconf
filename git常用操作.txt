@@ -1,0 +1,12 @@
+1.添加文件 git add readme.txt
+
+2.上传文件 git commit -m "注释的话"
+
+3.查看工作状态  git status
+
+4.查看修改文件 git diff
+
+5.查看日志 git log
+
+6.回退 git reset --hard HEAD^    （返回上一个版本）
+       git reset --hard HEAD~100 （返回上100个版本）
